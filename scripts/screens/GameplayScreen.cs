@@ -22,8 +22,10 @@ public partial class GameplayScreen : Control
     private CpuPaddleController? _cpuController;
     private Label? _scoreLabel;
     private Label? _statusLabel;
-    private Label? _abilityLabel;
-    private Button? _slowButton;
+    private Control? _slowChargeBar;
+    private ColorRect? _slowChargeFill;
+    private Label? _slowChargeLabel;
+    private Button? _slowChargeButton;
 
     private int _playerScore;
     private int _cpuScore;
@@ -120,22 +122,53 @@ public partial class GameplayScreen : Control
         _statusLabel.OffsetBottom = 108;
         AddChild(_statusLabel);
 
-        _abilityLabel = new Label();
-        NeonTheme.StyleLabel(_abilityLabel, 16, NeonTheme.Warning);
-        _abilityLabel.SetAnchorsPreset(LayoutPreset.BottomWide);
-        _abilityLabel.OffsetTop = -86;
-        _abilityLabel.OffsetBottom = -54;
-        AddChild(_abilityLabel);
+        _slowChargeBar = new Panel
+        {
+            ClipContents = true
+        };
+        _slowChargeBar.SetAnchorsPreset(LayoutPreset.BottomWide);
+        _slowChargeBar.OffsetLeft = 28;
+        _slowChargeBar.OffsetRight = -28;
+        _slowChargeBar.OffsetTop = -78;
+        _slowChargeBar.OffsetBottom = -22;
+        _slowChargeBar.AddThemeStyleboxOverride("panel", NeonTheme.MakeButtonStyle(new Color(0.01f, 0.07f, 0.12f), NeonTheme.Cyan));
+        AddChild(_slowChargeBar);
 
-        _slowButton = new Button { Text = "SLOW" };
-        NeonTheme.StyleButton(_slowButton);
-        _slowButton.SetAnchorsPreset(LayoutPreset.BottomRight);
-        _slowButton.OffsetLeft = -162;
-        _slowButton.OffsetRight = -28;
-        _slowButton.OffsetTop = -74;
-        _slowButton.OffsetBottom = -22;
-        _slowButton.Pressed += TryActivateSlowTime;
-        AddChild(_slowButton);
+        _slowChargeFill = new ColorRect
+        {
+            Color = new Color(0.0f, 0.82f, 1.0f, 0.84f),
+            MouseFilter = MouseFilterEnum.Ignore
+        };
+        _slowChargeFill.SetAnchorsPreset(LayoutPreset.FullRect);
+        _slowChargeFill.AnchorRight = 1f;
+        _slowChargeFill.OffsetLeft = 8f;
+        _slowChargeFill.OffsetTop = 10f;
+        _slowChargeFill.OffsetRight = 0f;
+        _slowChargeFill.OffsetBottom = -10f;
+        _slowChargeBar.AddChild(_slowChargeFill);
+
+        _slowChargeLabel = new Label
+        {
+            MouseFilter = MouseFilterEnum.Ignore,
+            VerticalAlignment = VerticalAlignment.Center
+        };
+        NeonTheme.StyleLabel(_slowChargeLabel, 22, NeonTheme.Text);
+        _slowChargeLabel.SetAnchorsPreset(LayoutPreset.FullRect);
+        _slowChargeBar.AddChild(_slowChargeLabel);
+
+        _slowChargeButton = new Button
+        {
+            Text = string.Empty,
+            FocusMode = FocusModeEnum.None,
+            MouseDefaultCursorShape = CursorShape.PointingHand
+        };
+        _slowChargeButton.SetAnchorsPreset(LayoutPreset.FullRect);
+        _slowChargeButton.AddThemeStyleboxOverride("normal", new StyleBoxEmpty());
+        _slowChargeButton.AddThemeStyleboxOverride("hover", new StyleBoxEmpty());
+        _slowChargeButton.AddThemeStyleboxOverride("pressed", new StyleBoxEmpty());
+        _slowChargeButton.AddThemeStyleboxOverride("focus", new StyleBoxEmpty());
+        _slowChargeButton.Pressed += TryActivateSlowTime;
+        _slowChargeBar.AddChild(_slowChargeButton);
     }
 
     private void BuildGameplayObjects()
@@ -280,18 +313,38 @@ public partial class GameplayScreen : Control
             _statusLabel.Text = _resetTimer > 0f ? "GET READY" : "FIRST TO 5";
         }
 
-        if (_abilityLabel is not null)
+        UpdateSlowChargeBar();
+    }
+
+    private void UpdateSlowChargeBar()
+    {
+        if (_slowChargeFill is null || _slowChargeLabel is null || _slowChargeButton is null)
         {
-            _abilityLabel.Text = SlowActive
-                ? $"TIME SLOWED  {_slowTimer:0.0}s"
-                : SlowReady
-                    ? "SLOW TIME READY"
-                    : $"RECHARGING  {_cooldownTimer:0.0}s";
+            return;
         }
 
-        if (_slowButton is not null)
-        {
-            _slowButton.Disabled = !SlowReady;
-        }
+        var fillAmount = SlowActive || SlowReady
+            ? 1f
+            : Mathf.Clamp(1f - (_cooldownTimer / SlowCooldown), 0f, 1f);
+
+        _slowChargeFill.AnchorRight = fillAmount;
+        _slowChargeFill.OffsetLeft = 8f;
+        _slowChargeFill.OffsetTop = 10f;
+        _slowChargeFill.OffsetRight = -8f;
+        _slowChargeFill.OffsetBottom = -10f;
+        _slowChargeFill.Visible = fillAmount > 0.01f;
+        _slowChargeFill.Color = SlowReady
+            ? new Color(0.0f, 0.95f, 1.0f, 0.92f)
+            : SlowActive
+                ? new Color(0.16f, 0.55f, 1.0f, 0.88f)
+                : new Color(0.0f, 0.65f, 0.95f, 0.68f);
+
+        _slowChargeLabel.Text = SlowActive
+            ? "TIME SLOWED"
+            : SlowReady
+                ? "SLOW"
+                : "CHARGING";
+
+        _slowChargeButton.MouseDefaultCursorShape = SlowReady ? CursorShape.PointingHand : CursorShape.Arrow;
     }
 }
