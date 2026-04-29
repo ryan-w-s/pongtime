@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="Pongtime"
-config/description="Enter an interesting project description here!"
-config/features=PackedStringArray("4.6")
+config/description="A portrait-first neon Pong game with tactical slow time."
+run/main_scene="res://scenes/Main.tscn"
+config/features=PackedStringArray("4.6", "C#")
 config/icon="res://icon.png"
+
+[display]
+
+window/size/viewport_width=540
+window/size/viewport_height=960
+window/stretch/mode="canvas_items"
 
 [dotnet]
 
