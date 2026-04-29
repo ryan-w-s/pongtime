@@ -12,6 +12,7 @@ The game is classic Pong rotated into a portrait-first 9:16 playfield:
 - Screens: menu, gameplay, and results.
 - Player paddle: bottom.
 - CPU paddle: top.
+- Player ability: briefly slow down time for the ball and CPU, while the player paddle stays at normal responsiveness.
 
 Keep the experience focused, responsive, and arcade-clean. Prefer a polished small game over a broad feature set.
 
@@ -55,6 +56,12 @@ Prefer one central state owner for screen transitions so logic does not get scat
 - Ball behavior should be deterministic enough to feel fair, with enough variation to avoid stale rallies.
 - CPU should be competent but beatable.
 - Define match-ending conditions clearly, such as a target score or timed round.
+- Include a brief player-triggered slow-time ability:
+  - Slow the ball and CPU paddle, but do not slow the player paddle or player input.
+  - Keep the duration short and readable.
+  - Use a cooldown, meter, or limited charges so the ability is tactical rather than always-on.
+  - Communicate availability and active state clearly in the gameplay UI.
+  - Add subtle neon-blue visual/audio feedback when time is slowed, while preserving ball readability.
 
 ### Visual Direction
 
