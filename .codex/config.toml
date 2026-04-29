@@ -1,0 +1,7 @@
+[mcp_servers.godot-mcp]
+command = "bun"
+args = ["C:\\Users\\ryans\\Documents\\Code\\godot-mcp\\build\\index.js"]
+
+[mcp_servers.godot-mcp.env]
+DEBUG = "true"
+GODOT_PATH = "C:\\Users\\ryans\\AppData\\Roaming\\Godot-Manager\\versions\\Godot_v4.6-stable_mono_win64\\Godot_v4.6-stable_mono_win64.exe"
