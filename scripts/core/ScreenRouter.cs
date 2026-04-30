@@ -72,8 +72,15 @@ public partial class ScreenRouter : Control
 
     private static AudioStreamPlayer CreateMusicPlayer(string path)
     {
-        var stream = AudioStreamMP3.LoadFromBuffer(FileAccess.GetFileAsBytes(path));
-        stream.Loop = true;
+        var stream = GD.Load<AudioStreamMP3>(path);
+        if (stream is null)
+        {
+            GD.PushWarning($"Music stream could not be loaded: {path}");
+        }
+        else
+        {
+            stream.Loop = true;
+        }
 
         return new AudioStreamPlayer
         {

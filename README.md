@@ -36,6 +36,16 @@ dotnet build Pongtime.sln
 
 The project entry point is `res://scenes/Main.tscn`.
 
+## Windows Itch Build
+
+Use the packaging script and upload the generated zip to itch. Do not upload `Pongtime.exe` by itself; Godot Mono exports may need a sibling `.NET` data folder beside the executable.
+
+```powershell
+.\tools\package_itch_windows.ps1
+```
+
+The script creates `build/Pongtime-windows.zip`.
+
 ## Project Layout
 
 ```text
