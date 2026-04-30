@@ -11,10 +11,10 @@ public partial class PlayerPaddleController : Node
     {
         _paddle = paddle;
         SetProcess(true);
-        SetProcessUnhandledInput(true);
+        SetProcessInput(true);
     }
 
-    public override void _UnhandledInput(InputEvent @event)
+    public override void _Input(InputEvent @event)
     {
         if (_paddle is null)
         {

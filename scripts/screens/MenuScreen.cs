@@ -57,7 +57,7 @@ public partial class MenuScreen : Control
 
         var hint = new Label
         {
-            Text = "DRAG TO MOVE  |  SPACE TO SLOW TIME",
+            Text = "ARROWS OR DRAG TO MOVE  |  SPACE TO SLOW TIME",
             AutowrapMode = TextServer.AutowrapMode.WordSmart
         };
         NeonTheme.StyleLabel(hint, 16, NeonTheme.Muted);
