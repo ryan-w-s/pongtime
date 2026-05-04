@@ -46,5 +46,85 @@
     "pitch": "No installer, no account, no microtransactions. Download Pongtime, unzip, and play. A complete arcade experience in a single executable.",
     "keywords": "pong windows download, free pong download, pong pc game, download pongtime, windows pong",
     "description": "Download Pongtime for Windows free. No installer needed. Just unzip and play a complete neon-blue Pong game with slow-time ability."
+  },
+  {
+    "slug": "indie-pong-game",
+    "title": "Pongtime - Indie Pong Game by Snow Tiger Pixels",
+    "h1": "An Indie Pong Game Worth Your Time",
+    "pitch": "Made by a solo developer who loved Pong enough to reinvent it. Pongtime keeps the purity of one paddle, one ball, and adds just enough new ideas to make it feel fresh without losing the soul.",
+    "keywords": "indie pong game, indie arcade game, solo dev pong, indie game windows, pongtime",
+    "description": "Pongtime is an indie Pong game with a vertical neon court and tactical slow-time. Handcrafted arcade action from Snow Tiger Pixels."
+  },
+  {
+    "slug": "pong-with-power-up",
+    "title": "Pongtime - Pong With a Power-Up Mechanic",
+    "h1": "Pong, But You Get a Power-Up",
+    "pitch": "Every few seconds, your slow-time ability recharges. Time it right and you can steal a point from a losing rally. Time it wrong and you waste it. That tension is what makes Pongtime hard to put down.",
+    "keywords": "pong power up, pong ability, pong with skills, power up arcade game, pongtime",
+    "description": "Pongtime adds a rechargeable slow-time power-up to classic Pong. Time your ability to turn rallies around. Free download."
+  },
+  {
+    "slug": "pong-single-player",
+    "title": "Pongtime - Single Player Pong Game",
+    "h1": "Single Player Pong That Actually Challenges You",
+    "pitch": "No waiting for a friend. No lobby. No matchmaking. Pongtime pits you against a CPU opponent that reads the ball, predicts your moves, and forces you to use your slow-time ability just to keep up.",
+    "keywords": "single player pong, pong vs cpu, pong vs ai, solo pong game, pongtime",
+    "description": "Pongtime is a single player Pong game with smart CPU opposition and a slow-time ability. Instant action, no multiplayer needed."
+  },
+  {
+    "slug": "pong-glowing-neon",
+    "title": "Pongtime - Glowing Neon Pong Visuals",
+    "h1": "Pong Wrapped in Neon Light",
+    "pitch": "Cyan paddles glowing against a dark court. A bright ball trailing light as it picks up speed. Pongtime proves you don't need photorealism when you have style — the neon-blue aesthetic is clean, readable, and impossible to look away from.",
+    "keywords": "glowing neon pong, neon visual style, glowing paddle game, neon aesthetic game, pongtime",
+    "description": "Pongtime features glowing neon-blue visuals on a dark court. Cyan paddles, bright ball, and a clean aesthetic that pops. Free download."
+  },
+  {
+    "slug": "quick-arcade-game",
+    "title": "Pongtime - Quick Arcade Game for Short Breaks",
+    "h1": "A Full Match in Under Two Minutes",
+    "pitch": "First to five, ball speeds up every rally, and the slow-time window is brutally short. Pongtime matches are fast, tense, and immediately replayable. Perfect for a break between tasks or a quick best-of-three session.",
+    "keywords": "quick arcade game, short game pc, fast pong game, quick play game, pongtime",
+    "description": "Pongtime is a quick arcade game with matches under two minutes. First to five, escalating speed, instant replay. Free download."
+  },
+  {
+    "slug": "pong-for-beginners",
+    "title": "Pongtime - Easy to Learn Pong Game",
+    "h1": "Pong So Simple Anyone Can Play It",
+    "pitch": "Move left. Move right. Hit the ball. That's it for the basics. Then there's slow-time — one button, huge impact. Pongtime has a skill ceiling but almost no skill floor, making it perfect for anyone who wants instant arcade fun.",
+    "keywords": "easy pong game, pong for beginners, simple arcade game, easy to learn game, pongtime",
+    "description": "Pongtime is easy to learn — move, hit the ball, use slow-time. A Pong game anyone can pick up instantly. Free Windows download."
+  },
+  {
+    "slug": "cpu-opponent-pong",
+    "title": "Pongtime - Pong vs Smart CPU Opponent",
+    "h1": "A CPU Opponent That Keeps You Honest",
+    "pitch": "The CPU doesn't cheat, but it doesn't go easy either. It tracks the ball, adjusts its speed, and punishes sloppy angles. As rallies get longer and the ball gets faster, you'll need every bit of your slow-time ability to survive.",
+    "keywords": "pong vs cpu, cpu opponent pong, pong vs computer, smart ai pong, pongtime",
+    "description": "Pongtime features a smart CPU opponent that adapts as rallies escalate. Beat the AI using timing and the slow-time ability. Free download."
+  },
+  {
+    "slug": "pong-speed-escalation",
+    "title": "Pongtime - Pong With Speed Escalation",
+    "h1": "Every Rally Gets Faster. Can You Keep Up?",
+    "pitch": "The first point is gentle. By point five, the ball is screaming. Pongtime's speed escalation means early points feel like a warmup and late points feel like a boss fight — without any artificial difficulty spikes.",
+    "keywords": "pong speed escalation, pong gets faster, increasing speed pong, escalating difficulty, pongtime",
+    "description": "Pongtime features speed escalation — the ball gets faster with every rally. Early points are calm, late points are chaos. Free download."
+  },
+  {
+    "slug": "original-music-pong",
+    "title": "Pongtime - Pong Game With Original Music",
+    "h1": "Pong Set to Its Own Soundtrack",
+    "pitch": "Menu, match, and results — each screen has its own looping track that fits the neon-blue mood. The music was written for the game, not licensed from a library. It's small, atmospheric, and surprisingly hard to stop humming.",
+    "keywords": "pong original music, game with soundtrack, original game music, retro game music, pongtime",
+    "description": "Pongtime features original looping music for each screen. A neon Pong game with a soundtrack written specifically for it. Free download."
+  },
+  {
+    "slug": "godot-pong-game",
+    "title": "Pongtime - Pong Game Made With Godot",
+    "h1": "Open-Source Tech, Polished Result",
+    "pitch": "Built in Godot 4.6 with C#, Pongtime shows what the engine can do with a tight scope. It's not a tech demo — it's a finished, playable game. But if you're curious about Godot, the source is there to explore.",
+    "keywords": "godot pong game, godot engine pong, c# pong game, godot arcade game, pongtime",
+    "description": "Pongtime is a Pong game built with Godot 4.6 and C#. A polished arcade experience made with open-source tools. Free download."
   }
 ]
