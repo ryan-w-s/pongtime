@@ -10,5 +10,6 @@ export default function (eleventyConfig) {
     },
     templateFormats: ["njk", "html", "txt", "xml"],
     htmlTemplateEngine: "njk",
+    pathPrefix: "/pongtime/",
   };
 }

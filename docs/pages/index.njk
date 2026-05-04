@@ -15,7 +15,8 @@ pitch: "Classic Pong, reimagined as a portrait-first neon arcade game with tacti
   <h2>More Ways to Find Pongtime</h2>
   <ul>
     {% for p in pages %}
-    <li><a href="/play/{{ p.slug }}/">{{ p.title }}</a></li>
+    {% set pageUrl = "/play/" ~ p.slug ~ "/" %}
+    <li><a href="{{ pageUrl | url }}">{{ p.title }}</a></li>
     {% endfor %}
   </ul>
 </section>
