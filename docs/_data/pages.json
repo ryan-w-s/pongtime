@@ -5,15 +5,15 @@
     "h1": "A Free Neon Pong Game You Can Play Right Now",
     "pitch": "Pongtime takes classic Pong and flips it vertical. Neon-blue court, tactical slow-time ability, first to five. Free to download and play on Windows.",
     "keywords": "free pong game, neon pong, arcade game, pongtime, free download",
-    "description": "Download Pongtime, a free neon-blue Pong game with tactical slow-time. Portrait-first arcade action for Windows."
+    "description": "Download Pongtime, a free neon-blue Pong game with tactical slow-time. Portrait court, quick matches, Windows."
   },
   {
     "slug": "neon-arcade-game",
     "title": "Pongtime - Neon Arcade Game | Cyberpunk Pong",
-    "h1": "Neon Arcade Pong with a Cyberpunk Edge",
-    "pitch": "Glowing cyan paddles, dark court, and a slow-time twist that turns every rally into a clutch moment. Pongtime is arcade tennis reimagined.",
+    "h1": "Neon Arcade Pong with a Slow-Time Twist",
+    "pitch": "Glowing cyan paddles, dark court, and a slow-time twist that turns every rally into a clutch moment. Pongtime is arcade tennis, sharpened.",
     "keywords": "neon arcade game, cyberpunk pong, neon blue game, retro arcade, pongtime",
-    "description": "Pongtime is a neon-blue arcade Pong game with cyberpunk aesthetics and a slow-time ability. Free Windows download."
+    "description": "Pongtime is a neon-blue arcade Pong game with a dark court, glowing paddles, and a slow-time ability. Free Windows download."
   },
   {
     "slug": "pong-with-slow-motion",
@@ -29,7 +29,7 @@
     "h1": "The Retro Pong Remake That Earns Its Twists",
     "pitch": "Pongtime respects the original: one paddle, one ball, first to five. The vertical court and slow-time mechanic add depth without complexity.",
     "keywords": "retro pong remake, classic pong, pong remake pc, retro arcade game, pongtime",
-    "description": "Pongtime is a retro Pong remake for PC with a vertical court and slow-time ability. Classic arcade feel, modern neon style."
+    "description": "Pongtime is a retro Pong remake for PC with a vertical court and slow-time ability. Same classic feel, fresh neon look."
   },
   {
     "slug": "portrait-pong",
@@ -37,13 +37,13 @@
     "h1": "Portrait Pong, Built for Desktop",
     "pitch": "Most Pong clones copy the original wide layout. Pongtime goes tall with a 9:16 court, a bottom paddle, and a CPU opponent at the top.",
     "keywords": "portrait pong, vertical pong game, 9:16 pong, tall pong game, pongtime",
-    "description": "Pongtime is a portrait-first Pong game with a 9:16 vertical court. Download free for Windows and play Pong in a new dimension."
+    "description": "Pongtime is a portrait-first Pong game with a 9:16 vertical court. Download free for Windows — same game, new angle."
   },
   {
     "slug": "windows-pong-download",
     "title": "Pongtime - Free Windows Pong Download",
     "h1": "Download Pongtime Free for Windows",
-    "pitch": "No installer, no account, no microtransactions. Download Pongtime, unzip, and play. A complete arcade experience in a single executable.",
+    "pitch": "No installer, no account, no microtransactions. Download Pongtime, unzip, and play. A full arcade game in a single executable.",
     "keywords": "pong windows download, free pong download, pong pc game, download pongtime, windows pong",
     "description": "Download Pongtime for Windows free. No installer needed. Just unzip and play a complete neon-blue Pong game with slow-time ability."
   },
@@ -53,7 +53,7 @@
     "h1": "An Indie Pong Game Worth Your Time",
     "pitch": "Made by a solo developer who loved Pong enough to reinvent it. Pongtime keeps the purity of one paddle, one ball, and adds just enough new ideas to make it feel fresh without losing the soul.",
     "keywords": "indie pong game, indie arcade game, solo dev pong, indie game windows, pongtime",
-    "description": "Pongtime is an indie Pong game with a vertical neon court and tactical slow-time. Handcrafted arcade action from Snow Tiger Pixels."
+    "description": "Pongtime is an indie Pong game with a vertical neon court and tactical slow-time. Made by Snow Tiger Pixels."
   },
   {
     "slug": "pong-with-power-up",
@@ -75,9 +75,9 @@
     "slug": "pong-glowing-neon",
     "title": "Pongtime - Glowing Neon Pong Visuals",
     "h1": "Pong Wrapped in Neon Light",
-    "pitch": "Cyan paddles glowing against a dark court. A bright ball trailing light as it picks up speed. Pongtime proves you don't need photorealism when you have style — the neon-blue aesthetic is clean, readable, and impossible to look away from.",
+    "pitch": "Cyan paddles glowing against a dark court. A bright ball trailing light as it picks up speed. The neon-blue look is clean, readable, and hard to look away from — no photorealism needed.",
     "keywords": "glowing neon pong, neon visual style, glowing paddle game, neon aesthetic game, pongtime",
-    "description": "Pongtime features glowing neon-blue visuals on a dark court. Cyan paddles, bright ball, and a clean aesthetic that pops. Free download."
+    "description": "Pongtime features glowing neon-blue visuals on a dark court. Cyan paddles, bright ball, clean and sharp. Free download."
   },
   {
     "slug": "quick-arcade-game",
@@ -122,9 +122,9 @@
   {
     "slug": "godot-pong-game",
     "title": "Pongtime - Pong Game Made With Godot",
-    "h1": "Open-Source Tech, Polished Result",
+    "h1": "A Finished Game, Not a Tech Demo",
     "pitch": "Built in Godot 4.6 with C#, Pongtime shows what the engine can do with a tight scope. It's not a tech demo — it's a finished, playable game. But if you're curious about Godot, the source is there to explore.",
     "keywords": "godot pong game, godot engine pong, c# pong game, godot arcade game, pongtime",
-    "description": "Pongtime is a Pong game built with Godot 4.6 and C#. A polished arcade experience made with open-source tools. Free download."
+    "description": "Pongtime is a Pong game built with Godot 4.6 and C#. A tight, finished game made with open-source tools. Free download."
   }
 ]
