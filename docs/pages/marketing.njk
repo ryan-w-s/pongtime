@@ -10,3 +10,13 @@ layout: layouts/base.njk
 {% include "partials/hero.njk" %}
 {% include "partials/features.njk" %}
 {% include "partials/download.njk" %}
+<section class="page-index">
+  <h2>More Ways to Find Pongtime</h2>
+  <ul>
+    <li><a href="{{ '/' | url }}">Pongtime</a></li>
+    {% for p in pages %}
+    {% set pageUrl = "/play/" ~ p.slug ~ "/" %}
+    <li><a href="{{ pageUrl | url }}">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
