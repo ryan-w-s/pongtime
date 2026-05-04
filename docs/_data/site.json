@@ -1,0 +1,10 @@
+{
+  "name": "Pongtime",
+  "tagline": "Portrait-first neon Pong with tactical slow time",
+  "url": "https://ryan-w-s.github.io/pongtime",
+  "description": "Pongtime is a portrait-first neon-blue Pong game with tactical slow-time ability. Play classic arcade Pong reimagined in a tall 9:16 neon court.",
+  "itchUrl": "https://snowtigerpixels.itch.io/pongtime",
+  "language": "en",
+  "author": "Ryan Stolliker",
+  "ogImage": "/img/pongtime-screenshot.png"
+}

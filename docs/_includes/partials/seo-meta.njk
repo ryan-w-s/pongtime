@@ -1,0 +1,13 @@
+<title>{{ title | default(site.name) }}</title>
+<meta name="description" content="{{ description | default(site.description) }}">
+<meta name="keywords" content="{{ keywords | default("pong, arcade, neon, pongtime, free game") }}">
+<meta property="og:title" content="{{ title | default(site.name) }}">
+<meta property="og:description" content="{{ description | default(site.description) }}">
+<meta property="og:image" content="{{ site.url }}{{ site.ogImage }}">
+<meta property="og:type" content="website">
+<meta property="og:url" content="{{ site.url }}{{ page.url }}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title | default(site.name) }}">
+<meta name="twitter:description" content="{{ description | default(site.description) }}">
+<meta name="twitter:image" content="{{ site.url }}{{ site.ogImage }}">
+<link rel="canonical" href="{{ site.url }}{{ page.url }}">

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="{{ site.language }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {% include "partials/seo-meta.njk" %}
+  <link rel="stylesheet" href="{{ '/css/style.css' | url }}">
+  <link rel="icon" href="{{ '/img/icon.png' | url }}">
+</head>
+<body>
+  <header class="site-header">
+    <nav>
+      <a href="{{ '/' | url }}" class="logo">{{ site.name }}</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 {{ site.author }} &middot; <a href="{{ site.itchUrl }}">itch.io</a></p>
+  </footer>
+</body>
+</html>
