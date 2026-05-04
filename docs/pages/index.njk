@@ -11,3 +11,11 @@ pitch: "Classic Pong, reimagined as a portrait-first neon arcade game with tacti
 {% include "partials/hero.njk" %}
 {% include "partials/features.njk" %}
 {% include "partials/download.njk" %}
+<section class="page-index">
+  <h2>More Ways to Find Pongtime</h2>
+  <ul>
+    {% for p in pages %}
+    <li><a href="/play/{{ p.slug }}/">{{ p.title }}</a></li>
+    {% endfor %}
+  </ul>
+</section>
