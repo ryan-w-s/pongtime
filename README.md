@@ -26,6 +26,10 @@ The main extra move is the slow-time ability. When it is ready, trigger it to sl
 - Menu, gameplay, and results screens
 - Original neon-blue presentation with looping music for each screen
 
+## Play It
+
+Download for Windows on [itch.io](https://snowtigerpixels.itch.io/pongtime).
+
 ## Run It Locally
 
 Open the project in Godot 4.6 Mono and run the main scene, or build from the command line:
